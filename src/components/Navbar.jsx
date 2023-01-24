@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { HomeOutlined, MoneyCollectionOutlined, BulbOutlined, FundOutlined, MenuOutlined } from '@ant-design/icons';
 import image from "../images/cryptocurrency.png";
 
+// ant-menu-item-selected
 const Navbar = () => {
     return (
         <div className='nav-container'>
@@ -21,7 +22,7 @@ const Navbar = () => {
             </div>
             <Menu theme="dark">
                 <Menu.Item icon={<HomeOutlined />}>
-                    <Link to="/">Home</Link>
+                    <Link to="/" >Home</Link>
                 </Menu.Item>
 
                 <Menu.Item icon={<FundOutlined />}>

@@ -12,7 +12,6 @@ const { Title } = Typography;
 const Homepage = () => {
 
   const { data, isFetching} = useGetCryptosQuery(10);
-  console.log(data);
   const globalStats = data?.data?.stats;
   if(isFetching) return 'Loading..'
   return (
@@ -37,7 +36,7 @@ const Homepage = () => {
   <Title level={3} className="show-more"> <Link to="/news">Show more</Link></Title>
 
 </div>
-<News />
+<News simplified={true}/>
 </>  )
 }
 
